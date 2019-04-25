@@ -34,16 +34,16 @@ public class Clock
 
   public void printAmericanTime()
   {
-    if(hour<11)
+    if(hour<13)
     {
-      System.out.printf("%d:%d:%d AM\n", hour, minute, second);
+      System.out.printf("%02d:%02d:%02d AM\n", hour, minute, second);
     }else{
-      System.out.printf("%d:%d:%d PM\n", hour-12, minute, second);
+      System.out.printf("%02d:%02d:%02d PM\n", hour-12, minute, second);
     }
   }
   public void printStandartTime()
   {
-    System.out.printf("%d:%d:%d\n", hour, minute, second);
+    System.out.printf("%02d:%02d:%02d\n", hour, minute, second);
   }
   public void tick()
   {
